@@ -13,6 +13,8 @@ on:
         paths:
             - .github/labels.yml
             - .github/workflows/create-labels.yml
+permissions:
+    issues: write
 
 jobs:
   sync-labels:
