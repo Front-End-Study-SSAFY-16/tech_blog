@@ -1,33 +1,50 @@
-import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import Footer from '@/shared/footer/Footer'
+import Header from '@/shared/header/Header'
+import type { Metadata, Viewport } from 'next'
+import { Noto_Sans_KR } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
+import MainContainer from '@/shared/Layouts/MainContainer'
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
+const NotoSansKR = Noto_Sans_KR({
+	variable: '--font-noto-sans-kr',
 	subsets: ['latin'],
 })
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+const Pretendard = localFont({
+	src: '../../public/fonts/pretendard/PretendardVariable.woff2',
+	variable: '--font-pretendard',
+	weight: '100 900',
+	style: 'normal',
 })
 
-export const metadata: Metadata = {
-	title: 'tech-blog',
-	description: 'tech-blog',
+export const viewport: Viewport = {
+	width: 'device-width',
+	initialScale: 1,
+	viewportFit: 'cover', // 화면 크기에 맞게 조정
 }
 
-export default function RootLayout({
-	children,
-}: Readonly<{
+export const metadata: Metadata = {
+	title: 'Mustard Tech Blog',
+	description: 'Mustard Tech Blog',
+	icons: {
+		icon: '/favicon.ico',
+	},
+}
+
+interface RootLayoutProps {
 	children: React.ReactNode
-}>) {
+}
+
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				{children}
+		<html lang="ko">
+			<body className={`${Pretendard.variable} ${NotoSansKR.variable}`}>
+				<div className="flex gap-6 flex-col min-h-screen">
+					<Header />
+					<MainContainer>{children}</MainContainer>
+					<Footer />
+				</div>
 			</body>
 		</html>
 	)
