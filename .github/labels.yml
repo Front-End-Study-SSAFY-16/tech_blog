@@ -1,0 +1,86 @@
+# 📌 기능 관련
+- name: "✨ feature"
+  color: "1d76db"
+  description: "새로운 기능 요청 또는 구현"
+
+- name: "🛠️ enhancement"
+  color: "0052cc"
+  description: "기존 기능의 개선 또는 리팩토링"
+
+- name: "🧪 experiment"
+  color: "b60205"
+  description: "실험적 기능 또는 테스트 구현"
+
+# 🐞 버그 및 에러
+- name: "🐞 bug"
+  color: "d73a4a"
+  description: "기능 오류 또는 예외 발생"
+
+- name: "🚨 critical"
+  color: "e11d21"
+  description: "서비스 중단 수준의 치명적인 버그"
+
+- name: "❓ unexpected"
+  color: "fbca04"
+  description: "예상치 못한 동작 또는 버그 의심 상황"
+
+# 📋 문서 및 가이드
+- name: "📝 docs"
+  color: "0075ca"
+  description: "문서 작성 또는 수정"
+
+- name: "📚 guideline"
+  color: "c5def5"
+  description: "개발 가이드나 컨벤션 관련"
+
+# 💬 커뮤니케이션 / 논의
+- name: "💬 discussion"
+  color: "5319e7"
+  description: "기능/방향성 등 팀 내 논의 이슈"
+
+- name: "❓ question"
+  color: "d876e3"
+  description: "개발 관련 질문 또는 확인 요청"
+
+- name: "🧠 idea"
+  color: "bfdadc"
+  description: "아직 구체화되지 않은 아이디어 제안"
+
+# 🚧 작업 상태
+- name: "🚧 in-progress"
+  color: "f9d0c4"
+  description: "현재 작업 중인 이슈 또는 PR"
+
+- name: "⏳ pending"
+  color: "fef2c0"
+  description: "대기 중 (리뷰, 의존성 등)"
+
+- name: "✅ done"
+  color: "0e8a16"
+  description: "작업 완료 (예: 머지된 이슈)"
+
+# 🧪 테스트 및 QA
+- name: "🧪 testing"
+  color: "fefcbf"
+  description: "테스트 진행 중"
+
+- name: "✅ passed"
+  color: "c2e0c6"
+  description: "테스트 통과 완료"
+
+- name: "❌ failed"
+  color: "e99695"
+  description: "테스트 실패 또는 QA 피드백 필요"
+
+# 🔐 보안 및 배포
+- name: "🔐 security"
+  color: "b60205"
+  description: "인증, 권한, 보안 관련 이슈"
+
+- name: "🚀 release"
+  color: "5319e7"
+  description: "릴리즈 및 배포 관련 작업"
+
+- name: "📦 dependency"
+  color: "0366d6"
+  description: "라이브러리 또는 패키지 관련 변경"
