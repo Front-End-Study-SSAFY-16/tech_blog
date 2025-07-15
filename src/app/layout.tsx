@@ -1,10 +1,10 @@
 import Footer from '@/shared/footer/Footer'
 import Header from '@/shared/header/Header'
+import MainContainer from '@/shared/Layouts/MainContainer'
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
-import MainContainer from '@/shared/Layouts/MainContainer'
 
 const NotoSansKR = Noto_Sans_KR({
 	variable: '--font-noto-sans-kr',
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang="ko">
 			<body className={`${Pretendard.variable} ${NotoSansKR.variable}`}>
-				<div className="flex gap-6 flex-col min-h-screen">
+				<div className="flex gap-6 flex-col min-h-screen md:min-w-[700px]">
 					<Header />
 					<MainContainer>{children}</MainContainer>
 					<Footer />
