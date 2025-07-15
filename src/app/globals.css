@@ -1,26 +1,52 @@
 @import 'tailwindcss';
 
+/* 테마 변경 시 적용 */
+@custom-variant dark (&:is(.dark *));
+
+/* 
+https://tailwindcss.com/docs/theme#theme-variable-namespaces
+*/
+
+/* base 의미 : 전역(Global) 변수 선언에 사용 
+모든 컴포넌트, 모든 곳에서 기본값처럼 적용 */
+@theme @base {
+	--font-pretendard: 'Pretendard';
+	--font-noto-sans-kr: 'Noto Sans KR';
+
+	/* container */
+	--container-content-width: 1140px;
+	--container-content-width-md: 1140px;
+
+	/* color */
+
+	/* text size */
+
+	/* breakpoint */
+}
+
+/* inline 의미 : 인라인(Inline) 변수 선언에 사용
+특정 컴포넌트나 특정 상황에서만 적용되는 변수
+*/
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+
+	/* 커스텀 height */
+	--height-nav: var(--height-nav);
+	--height-footer: var(--height-footer);
+}
+
+/* 변수 설정 */
 :root {
+	/* height */
+	--height-nav: 60px;
+	--height-footer: 50px;
+
 	--background: #ffffff;
 	--foreground: #171717;
 }
 
-@theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
-}
-
-body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+.dark {
+	--background: #0a0a0a;
+	--foreground: #ededed;
 }
