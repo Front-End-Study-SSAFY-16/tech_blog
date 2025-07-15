@@ -2,19 +2,9 @@
 name: 기타 이슈
 about: 기능 추가나 버그 수정 이외의 범용적인 이슈를 위한 템플릿
 title: '[General] 간단한 요약 작성'
-labels: 'question', 'discussion'
+labels: ''
 assignees: ''
 ---
-
-<!-- 
-GitHub Issue 템플릿의 메타데이터를 정의하는 YAML 헤더
-
-- name : 이슈 템플릿 이름
-- about : 이슈 템플릿 설명 (ex 기능 추가나 버그 수정 이외의 범용적인 이슈를 위한 템플릿)
-- title : 이슈 템플릿 제목 (ex [General] 간단한 요약 작성)
-- labels : 이슈 템플릿 라벨 (ex 질문, 토론)
-- assignees : 이슈 템플릿 담당자 (ex @username)
- -->
 
 ## 📌 이슈 개요
 
@@ -37,7 +27,7 @@ GitHub Issue 템플릿의 메타데이터를 정의하는 YAML 헤더
 
 <!-- 이 이슈를 통해 얻고자 하는 결과를 작성해주세요. -->
 
-예) 팀 컨벤션 문서화 / 가이드라인 명시
+<!-- 예) 팀 컨벤션 문서화 / 가이드라인 명시 -->
 
 ---
 
@@ -46,4 +36,3 @@ GitHub Issue 템플릿의 메타데이터를 정의하는 YAML 헤더
 <!-- 관련 문서, 가이드라인, 외부 링크 등이 있다면 공유해주세요. -->
 
 <!-- 예) https://tailwindcss.com/docs/configuration -->
-
