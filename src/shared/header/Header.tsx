@@ -1,8 +1,16 @@
+import LogoContainer from './LogoContainer'
+import MobileMenuContainer from './MobileMenuContainer'
+import NavContainer from './NavContainer'
+
 export default function Header() {
 	return (
-		<nav className="h-(--height-nav)">
-			<div className="max-w-content-width-md bg-blue-100 h-full w-content-width mx-auto">
-				header
+		<nav className="md:h-(--height-nav) h-auto border-b border-gray-100 overflow-y-hidden">
+			<div className="w-[calc(100%-2rem)] md:max-w-content-width-md h-(--height-nav) mx-auto ">
+				<div className="flex justify-between items-center h-full">
+					<LogoContainer />
+					<MobileMenuContainer />
+					<NavContainer />
+				</div>
 			</div>
 		</nav>
 	)
